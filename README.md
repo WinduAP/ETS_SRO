@@ -6,6 +6,10 @@ Drone Quadcopter memetakan area kota mini berukuran 12 × 12 m. Drone membawa 4 
 
 ![scene](results/fig_scene_overview.png)
 
+## File CoppeliaSim
+
+Buka `UTS_SRO_3D_Mapping_Drone_5022241125.ttt` langsung di CoppeliaSim 4.10 (File > Open scene). Scene sudah berisi arena, drone, semua sensor, dan script Lua. Tekan Play untuk mode manual (panah, W/S, A/D), atau jalankan `python3 python/mission.py` untuk misi otomatis.
+
 ## Isi repositori
 
 | Folder | Isi |
