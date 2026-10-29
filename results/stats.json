@@ -1,0 +1,556 @@
+{
+  "timestamp": "2026-10-29 22:30:28",
+  "total_processing_time_sec": 312.29972314834595,
+  "raw_points_count": 14759074,
+  "cropped_points_count": 9528960,
+  "filtered_points_count": 9330156,
+  "cropped_removed_count": 5230114,
+  "outliers_removed_count": 198804,
+  "outlier_pct": 2.0863137215393914,
+  "voxel_reduction_benchmark": {
+    "0.05m": {
+      "num_voxels": 248266,
+      "reduction_pct": 97.33910129691293,
+      "time_sec": 1.96226167678833
+    },
+    "0.10m": {
+      "num_voxels": 49305,
+      "reduction_pct": 99.47155224414254,
+      "time_sec": 1.7588608264923096
+    },
+    "0.20m": {
+      "num_voxels": 12306,
+      "reduction_pct": 99.86810509920736,
+      "time_sec": 1.7841341495513916
+    }
+  },
+  "selected_voxel_size_m": 0.1,
+  "selected_voxel_count": 49305,
+  "selected_voxel_reduction_pct": 99.47155224414254,
+  "ground_plane": {
+    "num_ground_points": 4202556,
+    "num_obstacle_points": 5089776,
+    "plane_equation": [
+      -0.0029433686286211014,
+      0.001136341830715537,
+      0.9999949336051941,
+      0.01711488701403141
+    ]
+  },
+  "clusters_count": 13,
+  "accuracy": {
+    "total_gt_obstacles": 19,
+    "detected_obstacles": 19,
+    "detection_rate_pct": 100.0,
+    "mean_position_error_m": 1.2486851520856344,
+    "mean_height_error_m": 0.18454802939766332,
+    "mean_iou_3d": 0.569488572093092,
+    "median_height_error_m": 0.00958571434021005,
+    "separate_objects": 8,
+    "details": [
+      {
+        "gt_name": "Gedung_Tingkat_A",
+        "gt_type": "stacked_building",
+        "gt_pos": [
+          -2.5,
+          2.5,
+          1.5
+        ],
+        "gt_height_top": 3.0,
+        "est_pos": [
+          -1.8341212272644043,
+          2.7965738773345947,
+          2.3526735305786133
+        ],
+        "est_height_top": 2.999995231628418,
+        "pos_error_m": 1.1217855206974887,
+        "height_error_m": 4.76837158203125e-06,
+        "iou_3d": 0.2971687007830741,
+        "points_in_cluster": 952851,
+        "merged_with": [
+          "Silo_Gandum"
+        ],
+        "status": "TERDETEKSI (menyatu)"
+      },
+      {
+        "gt_name": "Gedung_L_Shape",
+        "gt_type": "l_shape_building",
+        "gt_pos": [
+          2.4000001549720764,
+          -2.7999998927116394,
+          0.9
+        ],
+        "gt_height_top": 1.8,
+        "est_pos": [
+          0.5099722146987915,
+          -1.9668792486190796,
+          1.1952556371688843
+        ],
+        "est_height_top": 1.7999954223632812,
+        "pos_error_m": 2.086497427246648,
+        "height_error_m": 4.577636718794409e-06,
+        "iou_3d": 0.15705032073942218,
+        "points_in_cluster": 1672866,
+        "merged_with": [
+          "Gedung_Atap_Miring",
+          "Jembatan_Flyover",
+          "Kontainer_Kargo_A",
+          "Kontainer_Kargo_B",
+          "Kendaraan_Truk"
+        ],
+        "status": "TERDETEKSI (menyatu)"
+      },
+      {
+        "gt_name": "Gedung_Atap_Miring",
+        "gt_type": "pitched_roof_building",
+        "gt_pos": [
+          -2.0000000596046448,
+          -1.199999988079071,
+          1.1
+        ],
+        "gt_height_top": 2.2,
+        "est_pos": [
+          0.5099722146987915,
+          -1.9668792486190796,
+          1.1952556371688843
+        ],
+        "est_height_top": 2.3415093421936035,
+        "pos_error_m": 2.626240326860968,
+        "height_error_m": 0.14150934219360334,
+        "iou_3d": 0.10136155625508592,
+        "points_in_cluster": 1672866,
+        "merged_with": [
+          "Gedung_L_Shape",
+          "Jembatan_Flyover",
+          "Kontainer_Kargo_A",
+          "Kontainer_Kargo_B",
+          "Kendaraan_Truk"
+        ],
+        "status": "TERDETEKSI (menyatu)"
+      },
+      {
+        "gt_name": "Tangki_Bahan_Bakar_1",
+        "gt_type": "cylindrical_tank",
+        "gt_pos": [
+          3.5,
+          3.200000047683716,
+          1.14
+        ],
+        "gt_height_top": 2.28,
+        "est_pos": [
+          4.008206844329834,
+          2.948977470397949,
+          1.1375008821487427
+        ],
+        "est_height_top": 2.2749969959259033,
+        "pos_error_m": 0.5668269370106817,
+        "height_error_m": 0.005003004074096484,
+        "iou_3d": 0.3600384982495159,
+        "points_in_cluster": 856248,
+        "merged_with": [
+          "Tangki_Bahan_Bakar_2",
+          "Tangki_Bahan_Bakar_3"
+        ],
+        "status": "TERDETEKSI (menyatu)"
+      },
+      {
+        "gt_name": "Tangki_Bahan_Bakar_2",
+        "gt_type": "cylindrical_tank",
+        "gt_pos": [
+          4.800000190734863,
+          1.7999999523162842,
+          0.9
+        ],
+        "gt_height_top": 1.8,
+        "est_pos": [
+          4.008206844329834,
+          2.948977470397949,
+          1.1375008821487427
+        ],
+        "est_height_top": 1.8000032901763916,
+        "pos_error_m": 1.4154478830002215,
+        "height_error_m": 3.2901763915571536e-06,
+        "iou_3d": 0.1329632611346771,
+        "points_in_cluster": 856248,
+        "merged_with": [
+          "Tangki_Bahan_Bakar_1",
+          "Tangki_Bahan_Bakar_3"
+        ],
+        "status": "TERDETEKSI (menyatu)"
+      },
+      {
+        "gt_name": "Tangki_Bahan_Bakar_3",
+        "gt_type": "cylindrical_tank",
+        "gt_pos": [
+          4.599999904632568,
+          3.5999999046325684,
+          0.7
+        ],
+        "gt_height_top": 1.4,
+        "est_pos": [
+          4.008206844329834,
+          2.948977470397949,
+          1.1375008821487427
+        ],
+        "est_height_top": 2.274993896484375,
+        "pos_error_m": 0.9825763369734551,
+        "height_error_m": 0.8749938964843751,
+        "iou_3d": 0.05276320964559334,
+        "points_in_cluster": 856248,
+        "merged_with": [
+          "Tangki_Bahan_Bakar_1",
+          "Tangki_Bahan_Bakar_2"
+        ],
+        "status": "TERDETEKSI (menyatu)"
+      },
+      {
+        "gt_name": "Menara_Komunikasi",
+        "gt_type": "radio_tower",
+        "gt_pos": [
+          1.2000000178813934,
+          4.199999928474426,
+          2.1
+        ],
+        "gt_height_top": 4.2,
+        "est_pos": [
+          1.2012534141540527,
+          4.215523719787598,
+          2.0967960357666016
+        ],
+        "est_height_top": 4.190994739532471,
+        "pos_error_m": 0.015900455520522317,
+        "height_error_m": 0.009005260467529475,
+        "iou_3d": 0.7758110095760422,
+        "points_in_cluster": 157047,
+        "merged_with": [],
+        "status": "TERDETEKSI"
+      },
+      {
+        "gt_name": "Reaktor_Kubah",
+        "gt_type": "dome_reactor",
+        "gt_pos": [
+          -4.0000001192092896,
+          0.4999999701976776,
+          1.175
+        ],
+        "gt_height_top": 2.35,
+        "est_pos": [
+          -3.997354030609131,
+          0.49982619285583496,
+          1.171705961227417
+        ],
+        "est_height_top": 2.34041428565979,
+        "pos_error_m": 0.004228791184216613,
+        "height_error_m": 0.00958571434021005,
+        "iou_3d": 0.981699971144614,
+        "points_in_cluster": 263010,
+        "merged_with": [],
+        "status": "TERDETEKSI"
+      },
+      {
+        "gt_name": "Jembatan_Flyover",
+        "gt_type": "bridge_archway",
+        "gt_pos": [
+          0.0,
+          0.0,
+          0.925
+        ],
+        "gt_height_top": 1.85,
+        "est_pos": [
+          0.5099722146987915,
+          -1.9668792486190796,
+          1.1952556371688843
+        ],
+        "est_height_top": 1.8500021696090698,
+        "pos_error_m": 2.0498106614599076,
+        "height_error_m": 2.169609069735401e-06,
+        "iou_3d": 0.05764744014203394,
+        "points_in_cluster": 1672866,
+        "merged_with": [
+          "Gedung_L_Shape",
+          "Gedung_Atap_Miring",
+          "Kontainer_Kargo_A",
+          "Kontainer_Kargo_B",
+          "Kendaraan_Truk"
+        ],
+        "status": "TERDETEKSI (menyatu)"
+      },
+      {
+        "gt_name": "Kontainer_Kargo_A",
+        "gt_type": "shipping_container",
+        "gt_pos": [
+          0.5,
+          -3.8000000715255737,
+          0.45
+        ],
+        "gt_height_top": 0.9,
+        "est_pos": [
+          0.5099722146987915,
+          -1.9668792486190796,
+          1.1952556371688843
+        ],
+        "est_height_top": 1.7999614477157593,
+        "pos_error_m": 1.97884748304951,
+        "height_error_m": 0.8999614477157593,
+        "iou_3d": 0.024038321904009338,
+        "points_in_cluster": 1672866,
+        "merged_with": [
+          "Gedung_L_Shape",
+          "Gedung_Atap_Miring",
+          "Jembatan_Flyover",
+          "Kontainer_Kargo_B",
+          "Kendaraan_Truk"
+        ],
+        "status": "TERDETEKSI (menyatu)"
+      },
+      {
+        "gt_name": "Kontainer_Kargo_B",
+        "gt_type": "shipping_container",
+        "gt_pos": [
+          0.5,
+          -2.5999999046325684,
+          0.45
+        ],
+        "gt_height_top": 0.9,
+        "est_pos": [
+          0.5099722146987915,
+          -1.9668792486190796,
+          1.1952556371688843
+        ],
+        "est_height_top": 1.7999813556671143,
+        "pos_error_m": 0.9779300459996865,
+        "height_error_m": 0.8999813556671142,
+        "iou_3d": 0.02403831617282815,
+        "points_in_cluster": 1672866,
+        "merged_with": [
+          "Gedung_L_Shape",
+          "Gedung_Atap_Miring",
+          "Jembatan_Flyover",
+          "Kontainer_Kargo_A",
+          "Kendaraan_Truk"
+        ],
+        "status": "TERDETEKSI (menyatu)"
+      },
+      {
+        "gt_name": "Kendaraan_Truk",
+        "gt_type": "vehicle",
+        "gt_pos": [
+          -1.3250000774860382,
+          -3.5999999046325684,
+          0.35
+        ],
+        "gt_height_top": 0.7,
+        "est_pos": [
+          0.5099722146987915,
+          -1.9668792486190796,
+          1.1952556371688843
+        ],
+        "est_height_top": 0.8999922871589661,
+        "pos_error_m": 2.597818985678131,
+        "height_error_m": 0.1999922871589661,
+        "iou_3d": 0.011841099060627585,
+        "points_in_cluster": 1672866,
+        "merged_with": [
+          "Gedung_L_Shape",
+          "Gedung_Atap_Miring",
+          "Jembatan_Flyover",
+          "Kontainer_Kargo_A",
+          "Kontainer_Kargo_B"
+        ],
+        "status": "TERDETEKSI (menyatu)"
+      },
+      {
+        "gt_name": "Ramp_Tanjakan",
+        "gt_type": "inclined_ramp",
+        "gt_pos": [
+          3.0,
+          -0.5,
+          0.375
+        ],
+        "gt_height_top": 0.75,
+        "est_pos": [
+          3.0710020065307617,
+          -0.6123185157775879,
+          2.3526175022125244
+        ],
+        "est_height_top": 0.7069041132926941,
+        "pos_error_m": 1.9820766178367522,
+        "height_error_m": 0.04309588670730591,
+        "iou_3d": 0.11479996779000139,
+        "points_in_cluster": 124844,
+        "merged_with": [],
+        "status": "TERDETEKSI"
+      },
+      {
+        "gt_name": "Bukit_Kontur",
+        "gt_type": "terrain_mound",
+        "gt_pos": [
+          -3.5,
+          -3.200000047683716,
+          0.325
+        ],
+        "gt_height_top": 0.65,
+        "est_pos": [
+          -3.502037525177002,
+          -3.2024946212768555,
+          0.32229021191596985
+        ],
+        "est_height_top": 0.6411409378051758,
+        "pos_error_m": 0.004209199177855374,
+        "height_error_m": 0.008859062194824241,
+        "iou_3d": 0.8396986196598913,
+        "points_in_cluster": 129921,
+        "merged_with": [],
+        "status": "TERDETEKSI"
+      },
+      {
+        "gt_name": "Pohon_Pinus_1",
+        "gt_type": "pine_tree",
+        "gt_pos": [
+          -4.5,
+          4.0,
+          1.2
+        ],
+        "gt_height_top": 2.4,
+        "est_pos": [
+          -4.4996795654296875,
+          3.8870410919189453,
+          2.35201358795166
+        ],
+        "est_height_top": 2.2430338859558105,
+        "pos_error_m": 1.1575383900408813,
+        "height_error_m": 0.15696611404418936,
+        "iou_3d": 0.4336254554766187,
+        "points_in_cluster": 178828,
+        "merged_with": [],
+        "status": "TERDETEKSI"
+      },
+      {
+        "gt_name": "Pohon_Rindang_2",
+        "gt_type": "deciduous_tree",
+        "gt_pos": [
+          -1.0,
+          4.5,
+          1.162500023841858
+        ],
+        "gt_height_top": 2.25,
+        "est_pos": [
+          -1.0059741735458374,
+          4.498402118682861,
+          1.2218008041381836
+        ],
+        "est_height_top": 2.439753532409668,
+        "pos_error_m": 0.05962236592095732,
+        "height_error_m": 0.18975353240966797,
+        "iou_3d": 0.8811925676941404,
+        "points_in_cluster": 175825,
+        "merged_with": [],
+        "status": "TERDETEKSI"
+      },
+      {
+        "gt_name": "Pohon_Rindang_3",
+        "gt_type": "deciduous_tree",
+        "gt_pos": [
+          4.5,
+          -4.199999809265137,
+          1.05
+        ],
+        "gt_height_top": 2.1,
+        "est_pos": [
+          4.491076946258545,
+          -3.9778497219085693,
+          2.352844476699829
+        ],
+        "est_height_top": 2.0908522605895996,
+        "pos_error_m": 1.3216784830918051,
+        "height_error_m": 0.00914773941040048,
+        "iou_3d": 0.33046164775702364,
+        "points_in_cluster": 137495,
+        "merged_with": [],
+        "status": "TERDETEKSI"
+      },
+      {
+        "gt_name": "Pohon_Pinus_4",
+        "gt_type": "pine_tree",
+        "gt_pos": [
+          2.0,
+          1.7999999523162842,
+          1.0
+        ],
+        "gt_height_top": 2.0,
+        "est_pos": [
+          2.185589551925659,
+          1.7662990093231201,
+          2.3530466556549072
+        ],
+        "est_height_top": 1.9414570331573486,
+        "pos_error_m": 1.3661312117514643,
+        "height_error_m": 0.05854296684265137,
+        "iou_3d": 0.19861933764640383,
+        "points_in_cluster": 97346,
+        "merged_with": [],
+        "status": "TERDETEKSI"
+      },
+      {
+        "gt_name": "Silo_Gandum",
+        "gt_type": "grain_silo",
+        "gt_pos": [
+          -0.6000000238418579,
+          2.599999964237213,
+          1.7
+        ],
+        "gt_height_top": 3.4,
+        "est_pos": [
+          -1.8341212272644043,
+          2.7965738773345947,
+          2.3526735305786133
+        ],
+        "est_height_top": 3.3999998569488525,
+        "pos_error_m": 1.409850767125898,
+        "height_error_m": 1.4305114737211966e-07,
+        "iou_3d": 0.11857856376140836,
+        "points_in_cluster": 952851,
+        "merged_with": [
+          "Gedung_Tingkat_A"
+        ],
+        "status": "TERDETEKSI (menyatu)"
+      }
+    ]
+  },
+  "trajectory": {
+    "total_waypoints": 5169,
+    "total_time_sec": 261.29998779296875,
+    "max_altitude_m": 4.796676158905029,
+    "flight_length_m": 147.44085693359375
+  },
+  "arena": {
+    "size_x": 12.0,
+    "size_y": 12.0,
+    "floor_z": 0.0,
+    "wall_height": 0.4
+  },
+  "sensor_class_share_pct": {
+    "depthDown (bawah)": [
+      67.35,
+      12.74,
+      19.91
+    ],
+    "depthFront (depan 35\u00b0)": [
+      53.28,
+      27.51,
+      19.2
+    ],
+    "depthLeft (kiri 35\u00b0)": [
+      63.81,
+      18.99,
+      17.2
+    ],
+    "depthRight (kanan 35\u00b0)": [
+      69.32,
+      14.44,
+      16.23
+    ]
+  },
+  "scan2d_rays": 1323008,
+  "scan2d_hits": 58527
+}

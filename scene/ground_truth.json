@@ -1,0 +1,725 @@
+{
+  "arena": {
+    "size_x": 12.0,
+    "size_y": 12.0,
+    "floor_z": 0.0,
+    "wall_height": 0.4
+  },
+  "helipad": {
+    "pos": [
+      -4.5,
+      -4.5,
+      0.01
+    ],
+    "radius": 0.8
+  },
+  "flight_corridor": {
+    "min_alt": 4.8,
+    "recommended_alt": 5.0,
+    "max_obstacle_height": 4.2
+  },
+  "obstacles": [
+    {
+      "name": "Gedung_Tingkat_A",
+      "type": "stacked_building",
+      "pos": [
+        -2.5,
+        2.5,
+        1.5
+      ],
+      "size": [
+        2.4,
+        2.0,
+        3.0
+      ],
+      "height_top": 3.0,
+      "color": [
+        0.35,
+        0.4,
+        0.45
+      ],
+      "bounding_box": {
+        "min": [
+          -3.7,
+          1.5,
+          0.0
+        ],
+        "max": [
+          -1.3,
+          3.5,
+          3.0
+        ]
+      }
+    },
+    {
+      "name": "Gedung_L_Shape",
+      "type": "l_shape_building",
+      "pos": [
+        2.4,
+        -2.8,
+        0.9
+      ],
+      "size": [
+        2.8,
+        2.8,
+        1.8
+      ],
+      "height_top": 1.8,
+      "color": [
+        0.18,
+        0.28,
+        0.45
+      ],
+      "bounding_box": {
+        "min": [
+          1.0,
+          -4.2,
+          0.0
+        ],
+        "max": [
+          3.8,
+          -1.4,
+          1.8
+        ]
+      }
+    },
+    {
+      "name": "Gedung_Atap_Miring",
+      "type": "pitched_roof_building",
+      "pos": [
+        -2.0,
+        -1.2,
+        1.1
+      ],
+      "size": [
+        2.3,
+        1.8,
+        2.2
+      ],
+      "height_top": 2.2,
+      "color": [
+        0.65,
+        0.28,
+        0.2
+      ],
+      "bounding_box": {
+        "min": [
+          -3.15,
+          -2.1,
+          0.0
+        ],
+        "max": [
+          -0.85,
+          -0.3,
+          2.2
+        ]
+      }
+    },
+    {
+      "name": "Tangki_Bahan_Bakar_1",
+      "type": "cylindrical_tank",
+      "pos": [
+        3.5,
+        3.2,
+        1.14
+      ],
+      "size": [
+        2.05,
+        2.05,
+        2.28
+      ],
+      "height_top": 2.28,
+      "color": [
+        0.85,
+        0.86,
+        0.88
+      ],
+      "bounding_box": {
+        "min": [
+          2.475,
+          2.175,
+          0.0
+        ],
+        "max": [
+          4.525,
+          4.225,
+          2.28
+        ]
+      }
+    },
+    {
+      "name": "Tangki_Bahan_Bakar_2",
+      "type": "cylindrical_tank",
+      "pos": [
+        4.8,
+        1.8,
+        0.9
+      ],
+      "size": [
+        1.4,
+        1.4,
+        1.8
+      ],
+      "height_top": 1.8,
+      "color": [
+        0.2,
+        0.5,
+        0.55
+      ],
+      "bounding_box": {
+        "min": [
+          4.1,
+          1.1,
+          0.0
+        ],
+        "max": [
+          5.5,
+          2.5,
+          1.8
+        ]
+      }
+    },
+    {
+      "name": "Tangki_Bahan_Bakar_3",
+      "type": "cylindrical_tank",
+      "pos": [
+        4.6,
+        3.6,
+        0.7
+      ],
+      "size": [
+        1.0,
+        1.0,
+        1.4
+      ],
+      "height_top": 1.4,
+      "color": [
+        0.88,
+        0.62,
+        0.15
+      ],
+      "bounding_box": {
+        "min": [
+          4.1,
+          3.1,
+          0.0
+        ],
+        "max": [
+          5.1,
+          4.1,
+          1.4
+        ]
+      }
+    },
+    {
+      "name": "Menara_Komunikasi",
+      "type": "radio_tower",
+      "pos": [
+        1.2,
+        4.2,
+        2.1
+      ],
+      "size": [
+        0.6,
+        0.6,
+        4.2
+      ],
+      "height_top": 4.2,
+      "color": [
+        0.85,
+        0.2,
+        0.2
+      ],
+      "bounding_box": {
+        "min": [
+          0.9,
+          3.9,
+          0.0
+        ],
+        "max": [
+          1.5,
+          4.5,
+          4.2
+        ]
+      }
+    },
+    {
+      "name": "Reaktor_Kubah",
+      "type": "dome_reactor",
+      "pos": [
+        -4.0,
+        0.5,
+        1.175
+      ],
+      "size": [
+        1.6,
+        1.6,
+        2.35
+      ],
+      "height_top": 2.35,
+      "color": [
+        0.7,
+        0.45,
+        0.25
+      ],
+      "bounding_box": {
+        "min": [
+          -4.8,
+          -0.3,
+          0.0
+        ],
+        "max": [
+          -3.2,
+          1.3,
+          2.35
+        ]
+      }
+    },
+    {
+      "name": "Jembatan_Flyover",
+      "type": "bridge_archway",
+      "pos": [
+        0.0,
+        0.0,
+        0.925
+      ],
+      "size": [
+        2.8,
+        1.0,
+        1.85
+      ],
+      "height_top": 1.85,
+      "color": [
+        0.2,
+        0.38,
+        0.62
+      ],
+      "bounding_box": {
+        "min": [
+          -1.4,
+          -0.5,
+          0.0
+        ],
+        "max": [
+          1.4,
+          0.5,
+          1.85
+        ]
+      }
+    },
+    {
+      "name": "Kontainer_Kargo_A",
+      "type": "shipping_container",
+      "pos": [
+        0.5,
+        -3.8,
+        0.45
+      ],
+      "size": [
+        2.4,
+        1.0,
+        0.9
+      ],
+      "height_top": 0.9,
+      "color": [
+        0.1,
+        0.32,
+        0.7
+      ],
+      "bounding_box": {
+        "min": [
+          -0.7,
+          -4.3,
+          0.0
+        ],
+        "max": [
+          1.7,
+          -3.3,
+          0.9
+        ]
+      }
+    },
+    {
+      "name": "Kontainer_Kargo_B",
+      "type": "shipping_container",
+      "pos": [
+        0.5,
+        -2.6,
+        0.45
+      ],
+      "size": [
+        2.4,
+        1.0,
+        0.9
+      ],
+      "height_top": 0.9,
+      "color": [
+        0.88,
+        0.38,
+        0.12
+      ],
+      "bounding_box": {
+        "min": [
+          -0.7,
+          -3.1,
+          0.0
+        ],
+        "max": [
+          1.7,
+          -2.1,
+          0.9
+        ]
+      }
+    },
+    {
+      "name": "Kendaraan_Truk",
+      "type": "vehicle",
+      "pos": [
+        -1.325,
+        -3.6,
+        0.35
+      ],
+      "size": [
+        1.9,
+        0.8,
+        0.7
+      ],
+      "height_top": 0.7,
+      "color": [
+        0.92,
+        0.78,
+        0.12
+      ],
+      "bounding_box": {
+        "min": [
+          -2.275,
+          -4.0,
+          0.0
+        ],
+        "max": [
+          -0.375,
+          -3.2,
+          0.7
+        ]
+      }
+    },
+    {
+      "name": "Ramp_Tanjakan",
+      "type": "inclined_ramp",
+      "pos": [
+        3.0,
+        -0.5,
+        0.35
+      ],
+      "size": [
+        2.0,
+        1.0,
+        0.75
+      ],
+      "height_top": 0.75,
+      "color": [
+        0.6,
+        0.55,
+        0.48
+      ],
+      "bounding_box": {
+        "min": [
+          2.0,
+          -1.0,
+          0.0
+        ],
+        "max": [
+          4.0,
+          0.0,
+          0.75
+        ]
+      }
+    },
+    {
+      "name": "Bukit_Kontur",
+      "type": "terrain_mound",
+      "pos": [
+        -3.5,
+        -3.2,
+        0.325
+      ],
+      "size": [
+        1.8,
+        1.8,
+        0.65
+      ],
+      "height_top": 0.65,
+      "color": [
+        0.32,
+        0.48,
+        0.28
+      ],
+      "bounding_box": {
+        "min": [
+          -4.4,
+          -4.1,
+          0.0
+        ],
+        "max": [
+          -2.6,
+          -2.3,
+          0.65
+        ]
+      }
+    },
+    {
+      "name": "Pohon_Pinus_1",
+      "type": "pine_tree",
+      "pos": [
+        -4.5,
+        4.0,
+        1.2
+      ],
+      "size": [
+        1.3,
+        1.3,
+        2.4
+      ],
+      "height_top": 2.4,
+      "color": [
+        0.14,
+        0.48,
+        0.18
+      ],
+      "bounding_box": {
+        "min": [
+          -5.15,
+          3.35,
+          0.0
+        ],
+        "max": [
+          -3.85,
+          4.65,
+          2.4
+        ]
+      }
+    },
+    {
+      "name": "Pohon_Rindang_2",
+      "type": "deciduous_tree",
+      "pos": [
+        -1.0,
+        4.5,
+        1.2
+      ],
+      "size": [
+        1.5,
+        1.5,
+        2.25
+      ],
+      "height_top": 2.25,
+      "color": [
+        0.18,
+        0.58,
+        0.22
+      ],
+      "bounding_box": {
+        "min": [
+          -1.75,
+          3.75,
+          0.0
+        ],
+        "max": [
+          -0.25,
+          5.25,
+          2.25
+        ]
+      }
+    },
+    {
+      "name": "Pohon_Rindang_3",
+      "type": "deciduous_tree",
+      "pos": [
+        4.5,
+        -4.2,
+        1.05
+      ],
+      "size": [
+        1.3,
+        1.3,
+        2.1
+      ],
+      "height_top": 2.1,
+      "color": [
+        0.22,
+        0.52,
+        0.2
+      ],
+      "bounding_box": {
+        "min": [
+          3.85,
+          -4.85,
+          0.0
+        ],
+        "max": [
+          5.15,
+          -3.55,
+          2.1
+        ]
+      }
+    },
+    {
+      "name": "Pohon_Pinus_4",
+      "type": "pine_tree",
+      "pos": [
+        2.0,
+        1.8,
+        1.0
+      ],
+      "size": [
+        1.1,
+        1.1,
+        2.0
+      ],
+      "height_top": 2.0,
+      "color": [
+        0.12,
+        0.42,
+        0.16
+      ],
+      "bounding_box": {
+        "min": [
+          1.45,
+          1.25,
+          0.0
+        ],
+        "max": [
+          2.55,
+          2.35,
+          2.0
+        ]
+      }
+    },
+    {
+      "name": "Silo_Gandum",
+      "type": "grain_silo",
+      "pos": [
+        -0.6,
+        2.6,
+        1.7
+      ],
+      "size": [
+        1.3,
+        1.3,
+        3.4
+      ],
+      "height_top": 3.4,
+      "color": [
+        0.76,
+        0.73,
+        0.66
+      ],
+      "bounding_box": {
+        "min": [
+          -1.25,
+          1.95,
+          0.0
+        ],
+        "max": [
+          0.05,
+          3.25,
+          3.4
+        ]
+      }
+    },
+    {
+      "name": "Pagar_Keliling",
+      "type": "perimeter_wall",
+      "pos": [
+        0.0,
+        0.0,
+        0.2
+      ],
+      "size": [
+        12.0,
+        12.0,
+        0.4
+      ],
+      "height_top": 0.4,
+      "color": [
+        0.45,
+        0.46,
+        0.48
+      ],
+      "bounding_box": {
+        "min": [
+          -6.0,
+          -6.0,
+          0.0
+        ],
+        "max": [
+          6.0,
+          6.0,
+          0.4
+        ]
+      }
+    }
+  ],
+  "sensors": {
+    "depthDown": {
+      "type": "vision_sensor_depth",
+      "orientation": "pointing -Z (down)",
+      "fov_deg": 60.0,
+      "resolution": [
+        64,
+        64
+      ],
+      "far_clip": 12.0,
+      "reason": "Mendeteksi kontur ground/lantai (z\u22480) serta bidang atap/puncak seluruh objek dari atas secara akurat."
+    },
+    "depthFront": {
+      "type": "vision_sensor_depth",
+      "orientation": "facing +X (forward), pitched down -35 deg",
+      "fov_deg": 60.0,
+      "resolution": [
+        64,
+        48
+      ],
+      "far_clip": 12.0,
+      "reason": "Mendeteksi fasad vertikal dan dinding depan bangunan saat drone bergerak maju."
+    },
+    "depthLeft": {
+      "type": "vision_sensor_depth",
+      "orientation": "facing +Y (left), pitched down -35 deg",
+      "fov_deg": 60.0,
+      "resolution": [
+        64,
+        48
+      ],
+      "far_clip": 12.0,
+      "reason": "Mendeteksi fasad samping kiri gedung guna meminimalkan area bayangan/oklusi."
+    },
+    "depthRight": {
+      "type": "vision_sensor_depth",
+      "orientation": "facing -Y (right), pitched down -35 deg",
+      "fov_deg": 60.0,
+      "resolution": [
+        64,
+        48
+      ],
+      "far_clip": 12.0,
+      "reason": "Mendeteksi fasad samping kanan gedung untuk cakupan 3D bilateral."
+    },
+    "lidar2D": {
+      "type": "lidar_2d_360",
+      "components": [
+        "s0_front",
+        "s1_left",
+        "s2_rear",
+        "s3_right"
+      ],
+      "fov_deg": 360.0,
+      "resolution_per_sensor": [
+        128,
+        1
+      ],
+      "far_clip": 10.0,
+      "reason": "Menyediakan pemindaian bidang horizontal 360\u00b0 simultan untuk mapping okupansi 2D (Grade 2/BC) dan deteksi rintangan horizontal."
+    }
+  }
+}
